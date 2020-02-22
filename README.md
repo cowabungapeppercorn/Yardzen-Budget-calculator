@@ -16,7 +16,7 @@ The application boiler plate is a 'create-react-app' with firebase initialized i
 4. Every item has a lowPrice and a highPrice. This should be used to calculate and display a price range somewhere on the screen.
 5. The application should give the user feedback depending on how well the items they have selected fit into their budget, ie: letting the user know if their budget falls below the minimum bounds of the estimate, if their budget is above the upper bound, etc.
 
-(bonus): Add functionality that allows the client to submit the checklist. Store this information however you like in firestore, but DO NOT modify the items collection.
+(bonus): Add functionality that allows the client to submit the checklist. Store this information however you like in firestore, but DO NOT modify the items collection. Multiple candidates may be working from this database at the same time, so please prefix any collections that you use or create in the database with your first and last name, ie `benjaminRoseChecklistResults`
 
 ## Tips
 
