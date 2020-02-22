@@ -83,7 +83,7 @@ const seedDocs = [
   {
     type: "LIGHTING",
     name: "6-15",
-    lowPrice: 600,
+    lowPrice: 60000,
     highPrice: 150000
   },
   {
