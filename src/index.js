@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import seeds from './seeds';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 window.seed = seeds;
 
