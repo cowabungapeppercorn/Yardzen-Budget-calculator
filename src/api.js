@@ -1,16 +1,20 @@
 import db from './db';
 
 const getAllItems = async () => {
-  const itemsArr = [];
   try {
+    const itemsArr = [];
     const response = await db.collection("items").get();
     response.forEach(doc => {
-      itemsArr.push(doc.data());
+      const item = doc.data();
+      item.id = doc.id;
+      itemsArr.push(item);
     });
+
+    return itemsArr;
+  
   } catch (err) {
     console.log(err);
   }
-  return itemsArr;
 };
 
-export default getAllItems;
+export { getAllItems };
