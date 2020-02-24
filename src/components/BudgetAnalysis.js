@@ -14,10 +14,10 @@ export default function BudgetAnalysis() {
 
   return (
     <div>
-      <h6>Project Name: {name}</h6>
-      <h6>Budget Amount: ${intToDollar(amount)}</h6>
+      <h6>Your Project: {name}</h6>
+      <h6>Your Budget: ${intToDollar(amount)}</h6>
       <BudgetAlert text={text} variant={variant} />
-      <p>For a price range of ${intToDollar(totalLow)}-${intToDollar(totalHigh)}, you selected:</p>
+      <p>For a price range totalling ${intToDollar(totalLow)} - ${intToDollar(totalHigh)}, you selected:</p>
       <ListGroup>
         {Object.keys(selectedItems).map(type => {
           if (selectedItems[type]){
